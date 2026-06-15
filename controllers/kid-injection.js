@@ -18,6 +18,8 @@ const app = express();
  *         schema:
  *           type: string
  *         description: Authorization token (JWT)
+ *     security:
+ *       - ApiKeyAuth: []
  *     responses:
  *       200:
  *         content:
@@ -71,6 +73,8 @@ app.post('/path-traversal', async (req,res) => {
  *         schema:
  *           type: string
  *         description: Authorization token (JWT)
+ *     security:
+ *       - ApiKeyAuth: []
  *     responses:
  *       200:
  *         content:

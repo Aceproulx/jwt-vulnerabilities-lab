@@ -17,6 +17,8 @@ const fs = require('fs');
  *         schema:
  *           type: string
  *         description: Authorization token (JWT)
+ *     security:
+ *       - ApiKeyAuth: []
  *     responses:
  *       200:
  *         content:
